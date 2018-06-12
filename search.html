@@ -1,0 +1,27 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- Script that converts the query string into valid parameter -->
+<script type="text/javascript">
+function searchPrimo() {
+document.getElementById("primoQuery").value = "any,contains," + document.getElementById("primoQueryTemp").value.replace(/[,]/g, " ");
+document.forms["searchForm"].submit();
+}
+</script>
+</head>
+<body>
+<form id="simple" name="searchForm" method="get" target="_self" action="https://okla-am.hosted.exlibrisgroup.com/primo-explore/search?vid=OKCOM" enctype="application/x-www-form-urlencoded; charset=utf-8" onsubmit="searchPrimo()">
+<!-- Customizable Parameters -->
+<input type="hidden" name="query" id="primoQuery">
+<input type="hidden" name="tab" value="books_tab">
+<input type="hidden" name="search_scope" value="alma_scope">
+<input type="hidden" name="vid" value="OKCOM">
+
+<input type="text" id="primoQueryTemp" value="" size="35">
+
+<!-- Search Button -->
+<input id="go" title="Search" onclick="searchPrimo()" type="button" value="Search" alt="Search" style="height: 22px; font-size: 12px; font-weight: bold; background: #DE6E17; color: #ffffff; border: 1px solid;">
+</form>
+</body>
+</html>
