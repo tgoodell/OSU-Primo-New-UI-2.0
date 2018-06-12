@@ -2,6 +2,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="master.css">
 <!-- Script that converts the query string into valid parameter -->
 <script type="text/javascript">
 function searchPrimo() {
@@ -11,17 +14,28 @@ document.forms["searchForm"].submit();
 </script>
 </head>
 <body>
-<form id="simple" name="searchForm" method="get" target="_self" action="https://okla-am.hosted.exlibrisgroup.com/primo-explore/search?vid=OKCOM" enctype="application/x-www-form-urlencoded; charset=utf-8" onsubmit="searchPrimo()">
-<!-- Customizable Parameters -->
-<input type="hidden" name="query" id="primoQuery">
-<input type="hidden" name="tab" value="books_tab">
-<input type="hidden" name="search_scope" value="alma_scope">
-<input type="hidden" name="vid" value="OKCOM">
+<div class="w3-card-2 tandy-orange searchbox">
+  <form id="simple" name="searchForm" method="get" target="_self" action="https://okla-am.hosted.exlibrisgroup.com/primo-explore/search?vid=OKCOM" enctype="application/x-www-form-urlencoded; charset=utf-8" onsubmit="searchPrimo()">
+  <!-- Customizable Parameters -->
+  <input type="hidden" name="query" id="primoQuery">
+  <input type="hidden" name="tab" value="books_tab">
+  <input type="hidden" name="search_scope" value="alma_scope">
+  <input type="hidden" name="vid" value="OKCOM">
+<div class="barbutton">
+  <input type="text" id="primoQueryTemp" class="searchbar" value="" placeholder="Search for books, articles, and more!">
+  <!-- Search Button -->
+  <button class="w3-btn tandy-orange boxicon" id="go" title="Search" onclick="searchPrimo()" alt="Search" style="border: none;"><img src="searchicon.png" class="searchicon"></i></button>
+<div class="links">
+  <a href="http://libraryguides.health.okstate.edu/az.php" class="boxlinks">Databases</a>
+  <a style="padding-right:1%; margin-left:1%;"></a>
+  <a href="http://browzine.com/libraries/1267/subjects" class="boxlinks">Journals</a>
+</div>
+</div>
+</div>
 
-<input type="text" id="primoQueryTemp" value="" size="35">
 
-<!-- Search Button -->
-<input id="go" title="Search" onclick="searchPrimo()" type="button" value="Search" alt="Search" style="height: 22px; font-size: 12px; font-weight: bold; background: #DE6E17; color: #ffffff; border: 1px solid;">
+
+
 </form>
 </body>
 </html>
