@@ -14,7 +14,21 @@ document.forms["searchForm"].submit();
 </script>
 </head>
 <body>
-<div class="w3-card-2 tandy-orange searchbox">
+  <div class="w3-card w3-bar w3-deep-orange" style="text-decoration:none;">
+    <div style="margin: 0 auto; width: 500px;">
+<a href="https://okla-am.hosted.exlibrisgroup.com/primo-explore/search?vid=OKCOM&lang=en_US&sortby=rank" class="w3-bar-item" style="text-decoration:none;">New Search</a>
+
+<a href="https://okla-am.hosted.exlibrisgroup.com/primo-explore/jsearch?vid=OKCOM&offset=1&journals=letter,A&query=any&sortby=title&lang=en_US" class="w3-bar-item" style="text-decoration:none;">E-Journals</a>
+
+<a href="https://okla-am.hosted.exlibrisgroup.com/primo-explore/browse?vid=OKCOM" class="w3-bar-item" style="text-decoration:none;">Browse</a>
+
+<a href="http://libraryguides.health.okstate.edu/?b=g&d=a" class="w3-bar-item" style="text-decoration:none;">Guides</a>
+</div>
+  </div>
+
+  <div class="w3-card-2 w3-orange" style="height: 200px;">
+    <div style="padding-top:100px;">
+<div class="w3-card-4 tandy-orange searchbox" style="margin: auto;">
   <form id="simple" name="searchForm" method="get" target="_self" action="https://okla-am.hosted.exlibrisgroup.com/primo-explore/search?vid=OKCOM" enctype="application/x-www-form-urlencoded; charset=utf-8" onsubmit="searchPrimo()">
   <!-- Customizable Parameters -->
   <input type="hidden" name="query" id="primoQuery">
@@ -32,7 +46,8 @@ document.forms["searchForm"].submit();
 </div>
 </div>
 </div>
-
+</div>
+</div>
 
 
 
