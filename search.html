@@ -2,8 +2,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <link rel="stylesheet" href="master.css">
 <!-- Script that converts the query string into valid parameter -->
 <script type="text/javascript">
@@ -14,21 +14,21 @@ document.forms["searchForm"].submit();
 </script>
 </head>
 <body>
-  <div class="w3-card w3-bar w3-deep-orange" style="text-decoration:none;">
+  <div class="w3-card w3-bar w3-deep-orange w3-mobile" style="text-decoration:none;">
     <div style="margin: 0 auto; width: 500px;">
-<a href="https://okla-am.hosted.exlibrisgroup.com/primo-explore/search?vid=OKCOM&lang=en_US&sortby=rank" class="w3-bar-item" style="text-decoration:none;">New Search</a>
+<a href="https://okla-am.hosted.exlibrisgroup.com/primo-explore/search?vid=OKCOM&lang=en_US&sortby=rank" class="w3-bar-item headnav w3-mobile" style="text-decoration:none;">New Search</a>
 
-<a href="https://okla-am.hosted.exlibrisgroup.com/primo-explore/jsearch?vid=OKCOM&offset=1&journals=letter,A&query=any&sortby=title&lang=en_US" class="w3-bar-item" style="text-decoration:none;">E-Journals</a>
+<a href="https://okla-am.hosted.exlibrisgroup.com/primo-explore/jsearch?vid=OKCOM&offset=1&journals=letter,A&query=any&sortby=title&lang=en_US" class="w3-bar-item headnav w3-mobile" style="text-decoration:none;">E-Journals</a>
 
-<a href="https://okla-am.hosted.exlibrisgroup.com/primo-explore/browse?vid=OKCOM" class="w3-bar-item" style="text-decoration:none;">Browse</a>
+<a href="https://okla-am.hosted.exlibrisgroup.com/primo-explore/browse?vid=OKCOM" class="w3-bar-item headnav w3-mobile" style="text-decoration:none;">Browse</a>
 
-<a href="http://libraryguides.health.okstate.edu/?b=g&d=a" class="w3-bar-item" style="text-decoration:none;">Guides</a>
+<a href="http://libraryguides.health.okstate.edu/?b=g&d=a" class="w3-bar-item headnav w3-mobile" style="text-decoration:none;">Guides</a>
 </div>
   </div>
 
   <div class="w3-card-2 w3-orange" style="height: 200px;">
     <div style="padding-top:100px;">
-<div class="w3-card-4 tandy-orange searchbox" style="margin: auto;">
+<div class="w3-card-4 tandy-orange searchbox w3-mobile" style="margin: auto;">
   <form id="simple" name="searchForm" method="get" target="_self" action="https://okla-am.hosted.exlibrisgroup.com/primo-explore/search?vid=OKCOM" enctype="application/x-www-form-urlencoded; charset=utf-8" onsubmit="searchPrimo()">
   <!-- Customizable Parameters -->
   <input type="hidden" name="query" id="primoQuery">
@@ -36,10 +36,11 @@ document.forms["searchForm"].submit();
   <input type="hidden" name="search_scope" value="alma_scope">
   <input type="hidden" name="vid" value="OKCOM">
 <div class="barbutton">
-  <input type="text" id="primoQueryTemp" class="searchbar" value="" placeholder="Search for books, articles, and more!">
+  <input type="text" id="primoQueryTemp" class="searchbar " value="" placeholder="Search for books, articles, and more!">
   <!-- Search Button -->
-  <button class="w3-btn tandy-orange boxicon" id="go" title="Search" onclick="searchPrimo()" alt="Search" style="border: none;"><img src="searchicon.png" class="searchicon"></i></button>
-<div class="links">
+  <button class="w3-btn tandy-orange boxicon w3-mobile" id="go" title="Search" onclick="searchPrimo()" alt="Search" style="border: none;"><img src="searchicon.png" class="searchicon"></i></button>
+</form>
+<div class="links ">
   <a href="http://libraryguides.health.okstate.edu/az.php" class="boxlinks">Databases</a>
   <a style="padding-right:1%; margin-left:1%;"></a>
   <a href="http://browzine.com/libraries/1267/subjects" class="boxlinks">Journals</a>
@@ -48,9 +49,19 @@ document.forms["searchForm"].submit();
 </div>
 </div>
 </div>
+<div style="margin:auto;float:none;">
+<div class="w3-bar" style="padding-top:50px;">
+<div class="w3-card-2 w3-bar-item w3-mobile" style="width:30%;margin-right:1%;">
+<h1>What am I searching?</h1>
+<p>Print and electronic journals, books, and more!</p>
+</div>
 
+<div class="w3-card w3-bar-item w3-mobile" style="width:30%;margin-left:1%;">
+<h1>Where can I get help?</h1>
+<p><a href="mailto:jon.goodell@okstate.edu;linda.london@okstate.edu;louann.thompson@okstate.edu?subject=Ask-a-Librarian" style="text-decoration:none;color:#3d6e94;">Ask a librarian </a>how to start your search.</p>
+</div>
+</div>
+</div>
 
-
-</form>
 </body>
 </html>
